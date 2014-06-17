@@ -54,7 +54,7 @@ Jenkins ver. 1.554.1
 2. Jenkins->Manage Jenkins->Manage Nodes，新建一个节点，可以依据需求定制。目前选择的链接方式是：Launch slave agents via Java Web Start，好处是Slave机器的ip可以是动态的，坏处是Slave出问题后Master无法检测出相关问题。
 3. 新建节点后，如果选择的是“Launch slave agents via Java Web Start”，进入节点页面会提示使用类似如下的命令链接Master:```javaws http://ci.s.zdworks.com/jenkins/computer/iOS-Slave-Builder/slave-agent.jnlp```
 
-运行/opt/jenkins/connect_master.sh， 使得在http://ci.s.zdworks.com/jenkins/computer出现
+运行/opt/jenkins/connect_master.sh， 使得在[节点管理界面](http://ci.s.zdworks.com/jenkins/computer)出现
 
 ### 每日构建
 参看[test-ios-build](http://ci.s.zdworks.com/jenkins/view/zdclock_ios/job/test-ios-build)，相关配置和说明见图：![test-ios-build-config](images/test-ios-build.png)
